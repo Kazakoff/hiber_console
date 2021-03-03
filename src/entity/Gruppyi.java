@@ -34,6 +34,7 @@ public class Gruppyi  implements java.io.Serializable {
      private String status;
      private Date statusDate;
      private List<Studentyi> studentyis;
+     private String info;
 
     public Gruppyi() {
     }
@@ -122,6 +123,15 @@ public class Gruppyi  implements java.io.Serializable {
     
     public void setStudentyis(List<Studentyi> studentyis) {
         this.studentyis = studentyis;
+    }
+
+    @Column(name="Info", length=50)
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
     }
 
 
